@@ -1,0 +1,153 @@
+//
+// 覆盖 Bootstrap 中的变量
+//
+// 变量的命名遵循 `$组件-状态-属性-大小` 的格式,
+// 比如: $nav-link-disabled-color, $modal-content-box-shadow-xs.
+
+// Color system
+
+$black:    #12263f;
+
+$gray-100: #f8f9fa;
+$gray-600: #95aac9;
+$gray-800: #3b506c;
+
+$blue:    #2c7be5;
+$indigo:  #727cf5;
+$purple:  #6b5eae;
+$pink:    #ff679b;
+$red:     #e63757;
+$orange:  #fd7e14;
+$yellow:  #f6c343;
+$green:   #00d97e;
+$teal:    #02a8b5;
+$cyan:    #39afd1;
+
+
+$theme-colors: (
+  "secondary":  #6e84a3
+);
+
+
+// Options
+//
+// 是否启用三角箭头
+$enable-caret:                                false;
+// 是否启用圆角
+$enable-rounded:                              true;
+// 是否启用阴影效果
+$enable-shadows:                              false;
+// 是否启用渐变效果
+$enable-gradients:                            false;
+// 是否启用过渡动画
+$enable-transitions:                          true;
+// 系统开启减弱动态效果后，是否禁止动画
+$enable-prefers-reduced-motion-media-query:   true;
+// 是否启用 grid 布局
+$enable-grid-classes:                         true;
+// button reset submit 没有被禁用鼠标是否显示手型
+$enable-pointer-cursor-for-buttons:           true;
+// 是否启用打印页面的样式
+$enable-print-styles:                         true;
+// 是否启用响应式字体大小
+$enable-responsive-font-sizes:                false;
+// 是否启用 form 验证信息的图标
+$enable-validation-icons:                     false;
+// 是否输出已弃用的信息
+$enable-deprecation-messages:                 true;
+
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:                 #f9fbfd;
+$body-color:              $black;
+
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+// $font-family-sans-serif:      "Cerebri Sans", sans-serif;
+
+// stylelint-enable value-keyword-case
+
+$font-family-sans-serif:  -apple-system,BlinkMacSystemFont,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+$font-size-base:          .875rem; // Assumes the browser default, typically `16px`
+$font-weight-light:       300;
+$font-weight-normal:      400;
+$font-weight-bold:        600;
+
+$line-height-base:        1.5;
+
+$h1-font-size:            1.375rem; // 22px
+$h2-font-size:            1.25rem;  // 20px
+$h3-font-size:            1.125rem; // 18px
+$h4-font-size:            1rem;     // 16px
+$h5-font-size:            .875rem;  // 14px 
+$h6-font-size:            .875rem;  // 14px 
+
+$display1-size:           4rem;
+$display2-size:           3.25rem;
+$display3-size:           2.625rem;
+$display4-size:           2rem;
+
+$text-muted: 						  #6c757d;
+
+// Cards
+//
+$card-border-color:       $gray-100;
+
+$card-cap-bg:	            transparent;
+
+
+// Badges
+// 
+$badge-font-size:          80%;
+$badge-font-weight:        $font-weight-normal;
+$badge-padding-y:          .3em;
+$badge-padding-x:          .45em;
+
+
+// Alerts
+//
+// Define alert colors, border radius, and padding.
+
+
+$alert-bg-level:           0;
+$alert-border-level:       0;
+$alert-color-level:        -12.5;
+
+
+// Close
+
+$close-text-shadow:        none;
+
+
+// Buttons + Forms
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$input-btn-padding-y:      .25rem;
+$input-btn-padding-x:      .7rem;
+
+$input-focus-border-color: $blue;
+
+$input-btn-focus-box-shadow:  none;
+
+$input-btn-padding-y-lg:   .35rem;
+
+// Forms
+// 
+// $custom-select-focus-box-shadow:    none;
+
+// Pagination
+// 
+$pagination-padding-y:     .3rem;
+$pagination-color:         #6c757d;
+
+
+$input-group-addon-bg: #fff;

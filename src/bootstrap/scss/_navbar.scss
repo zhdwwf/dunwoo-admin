@@ -1,0 +1,290 @@
+// Contents
+//
+// Navbar
+// Navbar brand
+// Navbar nav
+// Navbar text
+// Navbar divider
+// Responsive navbar
+// Navbar position
+// Navbar themes
+
+
+// Navbar - 导航栏
+// 
+// 一个静态导航栏，可以扩展成固定、全宽以及其他变体
+
+.navbar {
+  position: relative; // 相对定位
+  display: flex;
+  flex-wrap: wrap; // 换行
+  align-items: center; // 交叉轴居中 - 垂直居中
+  justify-content: space-between; // 交叉轴两端对齐 - 每行间隔相等
+  padding: $navbar-padding-y $navbar-padding-x;
+
+  // flex 属性不能继承，为了避免嵌套内容异常，需要重新声明这些属性
+  > .container,
+  > .container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+
+// Navbar brand - 品牌
+//
+// 用于品牌，项目或站点名称
+
+.navbar-brand {
+  display: inline-block; // 行内块 - 可设置长,宽,padding,margin,且和其他元素并排
+  padding-top: $navbar-brand-padding-y;
+  padding-bottom: $navbar-brand-padding-y;
+  margin-right: $navbar-padding-x;
+  @include font-size($navbar-brand-font-size); // _rfs.scss - 响应式字体大小
+  line-height: inherit; // 继承父标签
+  white-space: nowrap; // 文本不换行
+
+  @include hover-focus {
+    text-decoration: none; // 获取焦点或鼠标悬浮去除下划线
+  }
+}
+
+
+// Navbar nav - 导航菜单
+// 
+// 自定义导航菜单，不需要使用 `.nav`，但可能会使用 `.nav-link`
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column; // 元素从上到下排列
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none; // 通常用于 ul，不使用项目符号
+
+  .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .dropdown-menu { // 下拉菜单默认定位, 无浮动
+    position: static;
+    float: none;
+  }
+}
+
+
+// Navbar text
+//
+// 导航栏内的文本
+
+.navbar-text {
+  display: inline-block; // 行内块
+  padding-top: $nav-link-padding-y;
+  padding-bottom: $nav-link-padding-y;
+}
+
+
+// Responsive navbar - 响应式导航栏
+// 
+// 响应式折叠和切换导航栏的样式，由 collapse js 插件提供支持
+
+// When collapsed, prevent the toggleable navbar contents from appearing in
+// the default flexbox row orientation. Requires the use of `flex-wrap: wrap`
+// on the `.navbar` parent. 父容器要有换行的能力
+.navbar-collapse {
+  flex-basis: 100%; // 占满整个剩余空间
+  flex-grow: 1; // 父容器有剩余空间时扩大这个元素，这个属性默认0，有多余空间也不扩大
+  // For always expanded or extra full navbars, ensure content aligns itself
+  // properly vertically. Can be easily overridden with flex utilities.
+  align-items: center; // 交叉轴居中 - 垂直居中
+}
+
+// 用于切换在折叠状态的导航栏的按钮。collapsed-折叠 toggling-切换
+.navbar-toggler {
+  padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
+  @include font-size($navbar-toggler-font-size);
+  line-height: 1;
+  background-color: transparent; // remove default button style
+  border: $border-width solid transparent; // remove default button style
+  @include border-radius($navbar-toggler-border-radius);
+
+  @include hover-focus {
+    text-decoration: none;
+  }
+}
+
+// Keep as a separate element so folks can easily override it with another icon
+// or image file as needed.
+.navbar-toggler-icon { // 方便用图片替换切换按钮
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+}
+
+// 定义一系列 `.navbar-expand-*` 响应类，.navbar-expand{-sm|-md|-lg|-xl}，配置什么时候折叠导航栏
+.navbar-expand {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+
+    &#{$infix} {
+      @include media-breakpoint-down($breakpoint) {
+        > .container,
+        > .container-fluid {
+          padding-right: 0;
+          padding-left: 0;
+        }
+      }
+
+      @include media-breakpoint-up($next) {
+        flex-flow: row nowrap; // 水平排列 不换行
+        justify-content: flex-start; // 主轴左对齐
+
+        .navbar-nav {
+          flex-direction: row; // 导航菜单水平排列
+
+          .dropdown-menu {
+            position: absolute; // 下拉菜单 绝对定位
+          }
+
+          .nav-link {
+            padding-right: $navbar-nav-link-padding-x;
+            padding-left: $navbar-nav-link-padding-x;
+          }
+        }
+
+        // For nesting containers, have to redeclare for alignment purposes
+        > .container,
+        > .container-fluid {
+          flex-wrap: nowrap;
+        }
+
+        .navbar-collapse {
+          display: flex !important; // stylelint-disable-line declaration-no-important
+
+          // Changes flex-bases to auto because of an IE10 bug
+          flex-basis: auto;
+        }
+
+        .navbar-toggler {
+          display: none; // 隐藏
+        }
+      }
+    }
+  }
+}
+
+
+// Navbar themes
+//
+// Styles for switching between navbars with light or dark background.
+
+// Dark links against a light background
+.navbar-light {
+  .navbar-brand {
+    color: $navbar-light-brand-color;
+
+    @include hover-focus {
+      color: $navbar-light-brand-hover-color;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $navbar-light-color;
+
+      @include hover-focus {
+        color: $navbar-light-hover-color;
+      }
+
+      &.disabled {
+        color: $navbar-light-disabled-color;
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      color: $navbar-light-active-color;
+    }
+  }
+
+  .navbar-toggler {
+    color: $navbar-light-color;
+    border-color: $navbar-light-toggler-border-color;
+  }
+
+  .navbar-toggler-icon {
+    background-image: $navbar-light-toggler-icon-bg;
+  }
+
+  .navbar-text {
+    color: $navbar-light-color;
+    a {
+      color: $navbar-light-active-color;
+
+      @include hover-focus {
+        color: $navbar-light-active-color;
+      }
+    }
+  }
+}
+
+// White links against a dark background
+.navbar-dark {
+  .navbar-brand {
+    color: $navbar-dark-brand-color;
+
+    @include hover-focus {
+      color: $navbar-dark-brand-hover-color;
+    }
+  }
+
+  .navbar-nav {
+    .nav-link {
+      color: $navbar-dark-color;
+
+      @include hover-focus {
+        color: $navbar-dark-hover-color;
+      }
+
+      &.disabled {
+        color: $navbar-dark-disabled-color;
+      }
+    }
+
+    .show > .nav-link,
+    .active > .nav-link,
+    .nav-link.show,
+    .nav-link.active {
+      color: $navbar-dark-active-color;
+    }
+  }
+
+  .navbar-toggler {
+    color: $navbar-dark-color;
+    border-color: $navbar-dark-toggler-border-color;
+  }
+
+  .navbar-toggler-icon {
+    background-image: $navbar-dark-toggler-icon-bg;
+  }
+
+  .navbar-text {
+    color: $navbar-dark-color;
+    a {
+      color: $navbar-dark-active-color;
+
+      @include hover-focus {
+        color: $navbar-dark-active-color;
+      }
+    }
+  }
+}

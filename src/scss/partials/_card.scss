@@ -1,0 +1,29 @@
+
+
+.card {
+  margin-bottom: 2rem;
+  // box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, .03);
+  box-shadow: 0 0 0.875rem 0 rgba(53,64,82,.05);
+}
+
+.card-header {
+  border-bottom: 0;
+}
+
+
+.card-title {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+
+.card-actions {
+  a {
+    color: #495057;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    line-height: 1.4
+  }
+}

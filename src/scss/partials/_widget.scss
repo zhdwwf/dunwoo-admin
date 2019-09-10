@@ -1,0 +1,169 @@
+//
+// 覆盖 bootstrap 小控件样式
+//
+
+
+
+// badge - 徽章
+// 
+// .badge {
+//   vertical-align: middle;
+// }
+
+pre {
+  background-color: #f6f8fa;
+  padding: .5rem .7rem;
+}
+
+blockquote {
+	padding: .5rem 1rem;
+	border-left: 4px solid #ddd;
+}
+
+.footer {
+	padding: 1rem .75rem;
+	background: #fff;
+	border-top: 1px solid #dee2e6;
+	
+	ul {
+		margin-bottom: 0;
+	}
+}
+
+// alert - 警告文字颜色
+// 
+.alert-warning {
+  color: #283e59;
+}
+
+.alert-outline {
+	color: #495057;
+	background: #fff;
+	border-color: #ced4da;
+}
+
+
+// button - 按钮
+// 
+.btn-square {
+	border-radius: 0;
+}
+
+
+//
+// Accordion - 手风琴
+.accordion {
+  > .card {
+  	&:not(:last-child) {
+  		margin-bottom: 0;
+  	}
+ 	}
+
+ 	.card-title a {
+ 		color: #495057;
+ 	}
+}
+
+
+.page-link {
+	i {
+		font-size: inherit;
+	}
+}
+
+// table - 表格
+//
+.table>tbody>tr>td {
+    vertical-align: middle
+}
+
+.table thead th {
+	border-top: none;
+}
+
+.table-action {
+
+	a {
+    color: #6c757d;
+	
+		&:hover {
+    	color: darken(#6c757d, 33%);
+			text-decoration: none;			
+		}
+
+	}
+}
+
+// form
+// 
+
+
+.tab {
+	margin-bottom: 2rem;
+
+	.tab-content {
+		background: #fff;
+		padding: 1.25rem;
+		border: 1px solid #dee2e6;
+		border-top-color: transparent;
+	}
+
+	.nav-tabs {
+
+		.nav-link {
+			color: #343a40;
+
+			&.active {
+				background: #fff;
+			}
+		}
+	}
+}
+
+.tab-vertical .nav-tabs {
+    float: left;
+    flex-direction: column;
+    border-bottom-color: transparent;
+    // border-right: 1px solid #dee2e6;
+}
+
+.tab-vertical .nav-tabs .nav-link.active {
+    border-bottom-color: #dee2e6;
+    border-right-color: transparent;
+    border-bottom-left-radius: .25rem;
+}
+
+.tab-vertical .tab-content {
+  border-left: 0;
+  border-top-color: #dee2e6;
+  overflow: auto;
+}
+
+
+
+
+.back-to-top {
+	position: fixed;
+	bottom: 75px;
+	right: 20px;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	color: #fff;
+	background: $menubar-bg;
+	opacity: .5;
+	cursor: pointer;
+	z-index: 1024;
+	border-radius: .2rem;
+
+	&:hover {
+		opacity: .7;
+	}
+
+	&.show {
+		display: flex;
+	}
+}
+

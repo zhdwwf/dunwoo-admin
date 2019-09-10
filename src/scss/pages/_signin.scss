@@ -1,0 +1,42 @@
+
+.sign {
+  .form-control {
+    height: 40px;
+  }
+
+  .input-group-merge {
+    .form-control-appended {
+      border-right-width:0;
+    }
+
+    .input-group-append {
+      margin-left: -1px;
+
+      &>.input-group-text {
+        border-left-width: 0;
+        cursor: pointer;
+
+        @include transition($input-transition);
+
+        &:hover {
+          i {
+            color: #495057;
+          }
+        }
+
+        i {
+          font-size: .875rem;
+          color: lighten(#495057, 25%);
+        }
+      }
+
+    }
+
+    // 获取焦点修改兄弟结点边框颜色 ~ 后面所有同级 + 后面紧挨着的第一个兄弟结点
+    &>.form-control:focus~[class*=input-group]>.input-group-text {
+      border-color: $input-focus-border-color;
+    }
+  }
+}
+
+

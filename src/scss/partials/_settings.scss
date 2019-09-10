@@ -1,0 +1,151 @@
+
+//
+// settings
+//
+
+.settings {
+    display: none
+}
+
+@media (min-width:1200px) {
+    .settings {
+        display: block
+    }
+}
+
+.settings-toggle {
+    background: #343a40;
+    color: #fff;
+    position: fixed;
+    top: 160px;
+    right: 0;
+    width: 46px;
+    padding: .75rem;
+    border-top-left-radius: .2rem;
+    border-bottom-left-radius: .2rem;
+    box-shadow: -5px 0 10px 0 rgba(0, 0, 0, .1);
+    transition: all .1s ease-in-out;
+    cursor: pointer
+}
+
+.settings-toggle:hover {
+    width: 52px
+}
+
+.settings-toggle svg {
+    width: 22px;
+    height: 22px;
+    animation-name: spin;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear
+}
+
+.settings-panel {
+    background: #fff;
+    border-left: 0 solid transparent;
+    box-shadow: -5px 0 10px 0 rgba(0, 0, 0, .1);
+    display: block;
+    height: 100%;
+    position: fixed;
+    width: 240px;
+    z-index: 100;
+    top: 0;
+    bottom: 0;
+    right: -240px;
+    transition: right .2s ease-in-out
+}
+
+.settings.open .settings-panel:before {
+    content: "";
+    background: rgba(0, 0, 0, .2);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    pointer-events: none
+}
+
+.settings.open .settings-panel {
+    right: 0
+}
+
+.settings-content {
+    height: 100%;
+    overflow: auto;
+    position: relative;
+    background: #fff
+}
+
+.settings-content .ps__thumb-y,
+.settings-content .simplebar-scrollbar:before {
+    background: rgba(0, 0, 0, .5)
+}
+
+.settings-title {
+    padding: 1.35rem 1.5rem;
+    font-size: .875rem
+}
+
+.settings-title h4 {
+    margin-bottom: 0
+}
+
+.settings-section {
+    border-top: 0 solid transparent;
+    padding: 1rem 1.5rem
+}
+
+.settings-layouts {
+    line-height: 2;
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0
+}
+
+.settings-layouts-item .badge {
+    background: #adb5bd;
+    border-radius: 10rem;
+    color: #fff;
+    padding: .2rem .35rem
+}
+
+.settings-layouts-item,
+.settings-layouts-item:hover {
+    color: #495057;
+    text-decoration: none;
+    cursor: pointer
+}
+
+.settings-layouts-item:hover .badge {
+    background: #6c757d
+}
+
+.settings-theme {
+    display: block;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer
+}
+
+.settings-theme:last-child {
+    margin-bottom: 0
+}
+
+.settings-theme:hover {
+    text-decoration: none
+}
+
+.settings-theme img {
+    border-radius: .2rem;
+    border: 1px solid #ced4da;
+    transform: scale(1);
+    transition: all .1s ease-in-out
+}
+
+.settings-theme:hover img {
+    transform: scale(1.03);
+}

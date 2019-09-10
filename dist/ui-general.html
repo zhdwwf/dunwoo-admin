@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Bootstrap 4 后台管理模板.">
+  <meta name="keywords" content="Bootstrap, Bootstrap4, Bootstrap 4, HTML, HTML5, CSS, CSS3, JS, JavaScript, web, 后台管理, 前端, 开源">
+
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="fonts/feather/feather.min.css">
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="css/theme.css">
+
+	<title>General - Dunwoo Admin - Bootstrap Template</title>
+
+</head>
+
+<body>
+<div class="wrapper">
+	<nav id="menubar" class="menubar">
+		<a class="menubar-brand" href="index.html">Dunwoo Admin</a>
+
+		<ul class="menubar-nav">
+			<li class="menubar-header">
+				主菜单
+			</li>
+			<li class="menubar-item">
+				<a href="index.html" class="menubar-link collapsed">
+	        <i class="fe fe-home"></i> <span>首页</span>
+	      </a>
+			</li>
+			<li class="menubar-item">
+				<a href="#pages" data-toggle="collapse" class="menubar-link collapsed">
+	        <i class="fe fe-file"></i> <span>页面示例</span>
+	      </a>
+				<ul id="pages" class="menubar-dropdown list-unstyled collapse" data-parent="#menubar">
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="pages-sign-in.html">登录 <span class="small ml-1">Sign In</span></a></li>
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="pages-sign-up.html">注册 <span class="small ml-1">Sign Up</span></a></li>
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="pages-reset-password.html">密码重置 <span class="small ml-1">Reset Password</span></a></li>
+					<li class="menubar-item"><a class="menubar-link" href="pages-404.html">404 页面</a></li>
+					<li class="menubar-item"><a class="menubar-link" href="pages-500.html">500 页面</a></li>
+				</ul>
+			</li>
+			<li class="menubar-item">
+				<a href="#documentation" data-toggle="collapse" class="menubar-link collapsed">
+	        <i class="fe fe-book-open"></i> <span>文档</span>
+	      </a>
+				<ul id="documentation" class="menubar-dropdown list-unstyled collapse " data-parent="#menubar">
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="docs-getting-started.html">开始使用<span class="small ml-1">Getting Started</span></a></li>
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="docs-changelog.html">更新日志<span class="small ml-1">Changelog</span></a></li>
+				</ul>
+			</li>
+
+			<li class="menubar-header">
+				常用组件
+			</li>
+			<li class="menubar-item active">
+				<a href="#ui" data-toggle="collapse" class="menubar-link">
+	        <i class="fe fe-grid"></i> <span>UI 元素</span>
+	      </a>
+				<ul id="ui" class="menubar-dropdown list-unstyled collapse show" data-parent="#menubar">
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="ui-alerts.html">警告框<span class="small ml-1">Alerts</span></a></li>
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="ui-buttons.html">按钮<span class="small ml-1">Buttons</span></a></li>
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="ui-cards.html">卡片<span class="small ml-1">Cards</span></a></li>
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="ui-grid.html">网格<span class="small ml-1">Grid</span></a></li>
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="ui-modals.html">模态窗口<span class="small ml-1">Modals</span></a></li>
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="ui-tabs.html">选项卡<span class="small ml-1">Tabs</span></a></li>
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="ui-typography.html">文字排版<span class="small ml-1">Typography</span></a></li>
+					<li class="menubar-item active"><a class="menubar-link align-items-end" href="ui-general.html">其他组件<span class="small ml-1">General</span></a></li>
+				</ul>
+			</li>
+			<li class="menubar-item">
+				<a href="#charts" data-toggle="collapse" class="menubar-link collapsed">
+	        <i class="fe fe-pie-chart"></i> 图表<span class="small ml-1">Charts</span>
+	      </a>
+				<ul id="charts" class="menubar-dropdown list-unstyled collapse " data-parent="#menubar">
+					<li class="menubar-item"><a class="menubar-link" href="#">Chart.js <span class="menubar-badge badge badge-primary">Feature</span></a></li>
+				</ul>
+			</li>
+			<li class="menubar-item">
+				<a href="#forms" data-toggle="collapse" class="menubar-link collapsed">
+	        <i class="fe fe-check-square"></i> 表单<span class="small ml-1">Forms</span>
+	      </a>
+				<ul id="forms" class="menubar-dropdown list-unstyled collapse " data-parent="#menubar">
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="forms-layouts.html">布局<span class="small ml-1">Layouts</span></a></li>
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="forms-basic-elements.html">基本元素<span class="small ml-1">Basic</span></a></li>
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="forms-input-groups.html">输入组<span class="small ml-1">Input Groups</span></a></li>
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="forms-validation.html">验证<span class="small ml-1">Validation</span></a></li>
+				</ul>
+			</li>
+			<li class="menubar-item">
+				<a href="#tables" data-toggle="collapse" class="menubar-link collapsed">
+	        <i class="fe fe-list"></i> 表格<span class="small ml-1">Tables</span>
+	      </a>
+				<ul id="tables" class="menubar-dropdown list-unstyled collapse " data-parent="#menubar">
+					<li class="menubar-item"><a class="menubar-link" href="tables-bootstrap.html">Bootstrap</a></li>
+					<li class="menubar-item"><a class="menubar-link" href="#">DataTables <span class="menubar-badge badge badge-primary">Feature</span></a></li>
+				</ul>
+			</li>
+			<li class="menubar-item">
+				<a href="#icons" data-toggle="collapse" class="menubar-link collapsed">
+	        <i class="fe fe-heart"></i> 图标<span class="small ml-1">Icons</span>
+	      </a>
+				<ul id="icons" class="menubar-dropdown list-unstyled collapse " data-parent="#menubar">
+					<li class="menubar-item"><a class="menubar-link" href="icons-feather.html">Feather</a></li>
+					<li class="menubar-item"><a class="menubar-link" href="icons-font-awesome.html">Font Awesome</a></li>
+				</ul>
+			</li>
+			<li class="menubar-item">
+				<a href="#multi" data-toggle="collapse" class="menubar-link">
+	        <i class="fe fe-share-2"></i> <span>多级菜单</span>
+	      </a>
+				<ul id="multi" class="menubar-dropdown list-unstyled collapse" data-parent="#menubar">
+					<li class="menubar-item">
+						<a href="#multi-2" data-toggle="collapse" class="menubar-link collapsed">
+	            二级菜单
+	          </a>
+						<ul id="multi-2" class="menubar-dropdown list-unstyled collapse">
+							<li class="menubar-item">
+								<a class="menubar-link" href="#">Item 1</a>
+								<a class="menubar-link" href="#">Item 2</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menubar-item">
+						<a href="#multi-3" data-toggle="collapse" class="menubar-link collapsed">
+	            三级菜单
+	          </a>
+						<ul id="multi-3" class="menubar-dropdown list-unstyled collapse">
+							<li class="menubar-item">
+								<a href="#multi-3-1" data-toggle="collapse" class="menubar-link collapsed">
+	                Item 1
+	              </a>
+								<ul id="multi-3-1" class="menubar-dropdown list-unstyled collapse">
+									<li class="menubar-item">
+										<a class="menubar-link" href="#">Item 1</a>
+										<a class="menubar-link" href="#">Item 2</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menubar-item">
+								<a class="menubar-link" href="#">Item 2</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</nav><!-- End Menubar -->
+
+	<div class="main">
+		<nav class="navbar navbar-expand navbar-light bg-white">
+			<a class="menubar-toggle d-flex mr-2">
+				<i class="hamburger align-self-center"></i>
+			</a>
+			<div class="navbar-collapse collapse mr-3">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-icon">
+						<a href="https://github.com/dwosc/dunwoo-admin" target="_blank">
+							<svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false">
+		            <title>GitHub</title>
+		            <path d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z" fill="currentColor" fill-rule="evenodd"></path>
+		          </svg>
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-icon dropdown-toggle" href="#" id="messagesDropdown" data-toggle="dropdown">
+							<div class="position-relative">
+								<i class="fe fe-message-circle"></i>
+								<span class="indicator">3</span>
+							</div>
+						</a>
+						<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="messagesDropdown">
+							<div class="dropdown-menu-header">
+								<div class="position-relative">
+									新消息
+								</div>
+							</div>
+							<div class="list-group">
+								<a href="#" class="list-group-item">
+									<div class="row no-gutters align-items-center">
+										<div class="col-10 pl-2">
+											<div class="text-dark">小张 <span class="text-muted small ml-1">2h ago</span></div>
+											<div class="text-muted small mt-1">主题不错.</div>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="list-group-item">
+									<div class="row no-gutters align-items-center">
+										<div class="col-10 pl-2">
+											<div class="text-dark">小李 <span class="text-muted small ml-1">4h ago</span></div>
+											<div class="text-muted small mt-1">Bootstrap 4 flex 弹性布局.</div>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="list-group-item">
+									<div class="row no-gutters align-items-center">
+										<div class="col-10 pl-2">
+											<div class="text-dark">小王 <span class="text-muted small ml-1">5h ago</span></div>
+											<div class="text-muted small mt-1">999，6 翻了.</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="dropdown-menu-footer">
+								<a href="#" class="text-muted">查看所有</a>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-toggle="dropdown">
+							<div class="position-relative">
+								<i class="fe fe-bell"></i>
+							</div>
+						</a>
+						<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="alertsDropdown">
+							<div class="dropdown-menu-header">
+								系统通知
+							</div>
+							<div class="list-group">
+								<a href="#" class="list-group-item">
+									<div class="row no-gutters align-items-center">
+										<div class="col-10">
+											<div class="text-dark">系统更新 <span class="text-muted small ml-1">2h ago</span></div>
+											<div class="text-muted small mt-1">新版本 v888888.</div>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="list-group-item">
+									<div class="row no-gutters align-items-center">
+										<div class="col-10">
+											<div class="text-dark">登录 IP: 192.186.1.1 <span class="text-muted small ml-1">8h ago</span></div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="dropdown-menu-footer">
+								<a href="#" class="text-muted">查看所有</a>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-toggle="dropdown">
+	            <i class="align-middle fe fe-settings"></i>
+	          </a>
+
+						<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-toggle="dropdown">
+	            <img src="img/avatar.png" class="avatar img-fluid rounded-circle mr-1" alt="Dunwoo" /> <span class="text-dark">Dunwoo</span>
+	          </a>
+						<div class="dropdown-menu dropdown-menu-right">
+							<a class="dropdown-item" href="#">个人信息</a>
+							<a class="dropdown-item" href="#">设置</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="docs-getting-started.html">帮助</a>
+							<a class="dropdown-item" href="index.html">退出</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav><!-- End Navbar -->
+
+		<main class="content">
+			<div class="container-fluid p-0">
+
+				<h1 class="h3 mb-3">常用组件 - General</h1>
+
+				<div class="row">
+					<div class="col-12 col-lg-6">
+						<div class="accordion" id="accordionExample">
+							<div class="card">
+								<div class="card-header" id="headingOne">
+									<h5 class="card-title my-2">
+										<a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					            手风琴 - 关雎
+          					</a>
+									</h5>
+								</div>
+								<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+									<div class="card-body">
+										关关雎鸠，在河之洲。参差荇菜，左右流之。求之不得，寤寐思服。参差荇菜，左右采之。参差荇菜，左右芼之。
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" id="headingTwo">
+									<h5 class="card-title my-2">
+										<a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+					            手风琴 - 桃夭
+					          </a>
+									</h5>
+								</div>
+								<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+									<div class="card-body">
+										桃之夭夭，灼灼其华。之子于归，宜其室家。桃之夭夭，有蕡其实。之子于归，宜其家室。桃之夭夭，其叶蓁蓁。之子于归，宜其家人。
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header" id="headingThree">
+									<h5 class="card-title my-2">
+										<a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+					            手风琴 - 子衿
+					          </a>
+									</h5>
+								</div>
+								<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+									<div class="card-body">
+										青青子衿，悠悠我心。纵我不往，子宁不嗣音？青青子佩，悠悠我思。纵我不往，子宁不来？挑兮达兮，在城阙兮。一日不见，如三月兮。
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h5 class="card-title">面包屑导航 - Breadcrumbs</h5>
+								<h6 class="card-subtitle text-muted">当前页面在导航层次结构中的位置</h6>
+							</div>
+							<div class="card-body">
+								<nav aria-label="breadcrumb">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item active">首页</li>
+									</ol>
+								</nav>
+								<nav aria-label="breadcrumb">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item"><a href="index.html">首页</a></li>
+										<li class="breadcrumb-item active">分类</li>
+									</ol>
+								</nav>
+								<nav aria-label="breadcrumb">
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item"><a href="index.html">首页</a></li>
+										<li class="breadcrumb-item"><a href="#">分类</a></li>
+										<li class="breadcrumb-item active">内容</li>
+									</ol>
+								</nav>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h5 class="card-title">图片 - Images</h5>
+							</div>
+							<div class="card-body">
+								<div class="text-center">
+									<img class="img-thumbnail rounded mr-2 mb-2" src="img/avatar.png" alt="Placeholder" width="80" height="80">
+									<img class="img-thumbnail rounded-circle rounded mr-2 mb-2" src="img/avatar.png" alt="Placeholder" width="80" height="80">
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h5 class="card-title">分页 - Pagination</h5>
+								<h6 class="card-subtitle text-muted">分页样式</h6>
+							</div>
+							<div class="card-body">
+								<nav aria-label="Page navigation example">
+									<ul class="pagination pagination-sm">
+										<li class="page-item"><a class="page-link" href="#"><i class="fe fe-chevrons-left"></i></a></li>
+										<li class="page-item"><a class="page-link" href="#">1</a></li>
+										<li class="page-item active"><a class="page-link" href="#">2</a></li>
+										<li class="page-item"><a class="page-link" href="#">3</a></li>
+										<li class="page-item"><a class="page-link" href="#">4</a></li>
+										<li class="page-item"><a class="page-link" href="#">5</a></li>
+										<li class="page-item"><a class="page-link" href="#"><i class="fe fe-chevrons-right"></i></a></li>
+									</ul>
+								</nav>
+								<nav aria-label="Page navigation example">
+									<ul class="pagination pagination-md">
+										<li class="page-item"><a class="page-link" href="#"><i class="fe fe-chevrons-left"></i></a></li>
+										<li class="page-item"><a class="page-link" href="#">1</a></li>
+										<li class="page-item active"><a class="page-link" href="#">2</a></li>
+										<li class="page-item"><a class="page-link" href="#">3</a></li>
+										<li class="page-item"><a class="page-link" href="#">4</a></li>
+										<li class="page-item"><a class="page-link" href="#">5</a></li>
+										<li class="page-item"><a class="page-link" href="#"><i class="fe fe-chevrons-right"></i></a></li>
+									</ul>
+								</nav>
+								<nav aria-label="Page navigation example">
+									<ul class="pagination pagination-lg">
+										<li class="page-item"><a class="page-link" href="#"><i class="fe fe-chevrons-left"></i></a></li>
+										<li class="page-item"><a class="page-link" href="#">1</a></li>
+										<li class="page-item active"><a class="page-link" href="#">2</a></li>
+										<li class="page-item"><a class="page-link" href="#">3</a></li>
+										<li class="page-item"><a class="page-link" href="#">4</a></li>
+										<li class="page-item"><a class="page-link" href="#">5</a></li>
+										<li class="page-item"><a class="page-link" href="#"><i class="fe fe-chevrons-right"></i></a></li>
+									</ul>
+								</nav>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h5 class="card-title">弹出框 - Popovers</h5>
+								<h6 class="card-subtitle text-muted">气泡式弹出层组件</h6>
+							</div>
+							<div class="card-body text-center">
+								<button class="btn btn-secondary" type="button" title="哪吒" data-container="body" data-toggle="popover" data-placement="top" data-content="去他个鸟命！我命由我，不由天！是魔是仙，我自己决定！">顶部弹出</button>
+								<button class="btn btn-secondary" type="button" title="哪吒" data-container="body" data-toggle="popover" data-placement="bottom" data-content="去他个鸟命！我命由我，不由天！是魔是仙，我自己决定！">底部弹出</button>
+								<button class="btn btn-secondary" type="button" title="哪吒" data-container="body" data-toggle="popover" data-placement="left" data-content="去他个鸟命！我命由我，不由天！是魔是仙，我自己决定！">左边弹出</button>
+								<button class="btn btn-secondary" type="button" title="哪吒" data-container="body" data-toggle="popover" data-placement="right" data-content="去他个鸟命！我命由我，不由天！是魔是仙，我自己决定！">右边弹出</button>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h5 class="card-title">提示工具 - Tooltips</h5>
+								<h6 class="card-subtitle text-muted">鼠标悬停显示提示信息</h6>
+							</div>
+							<div class="card-body text-center">
+								<button class="btn btn-secondary" type="button" data-toggle="tooltip" data-placement="left" title="Tooltip on left">左边提示</button>
+								<button class="btn btn-secondary" type="button" data-toggle="tooltip" data-placement="top" title="Tooltip on top">顶部提示</button>
+								<button class="btn btn-secondary" type="button" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">底部提示</button>
+								<button class="btn btn-secondary" type="button" data-toggle="tooltip" data-placement="right" data-container="body" title="Tooltip on right">右边提示</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-lg-6">
+						<div class="card">
+							<div class="card-header">
+								<h5 class="card-title">小徽章 - Badges</h5>
+								<h6 class="card-subtitle text-muted">突出表示特性或者警告</h6>
+							</div>
+							<div class="card-body">
+
+								<div class="mb-1">
+									<span class="badge badge-primary">Primary</span>
+									<span class="badge badge-secondary">Secondary</span>
+									<span class="badge badge-success">Success</span>
+									<span class="badge badge-danger">Danger</span>
+									<span class="badge badge-warning">Warning</span>
+									<span class="badge badge-info">Info</span>
+								</div>
+
+								<div class="mt-1">
+									<span class="badge badge-pill badge-primary">Primary</span>
+									<span class="badge badge-pill badge-secondary">Secondary</span>
+									<span class="badge badge-pill badge-success">Success</span>
+									<span class="badge badge-pill badge-danger">Danger</span>
+									<span class="badge badge-pill badge-warning">Warning</span>
+									<span class="badge badge-pill badge-info">Info</span>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h5 class="card-title">下拉列表 - Dropdowns</h5>
+								<h6 class="card-subtitle text-muted">切换显示功能菜单或者文字</h6>
+							</div>
+							<div class="card-body pb-0">
+
+								<div class="row mb-3">
+									<div class="col-12 col-md-6 col-lg-12 col-xl-6 col-xxl-4">
+										<p class="mb-0">基本样式:</p>
+										<div class="dropdown-menu mb-2" style="position:static;display:block;">
+											<a class="dropdown-item" href="#">我不是药神</a>
+											<a class="dropdown-item" href="#">魔童哪吒</a>
+											<a class="dropdown-item" href="#">流浪地球</a>
+										</div>
+									</div>
+									<div class="col-12 col-md-6 col-lg-12 col-xl-6 col-xxl-4">
+										<p class="mb-0">激活样式:</p>
+										<div class="dropdown-menu mb-2" style="position:static;display:block;">
+											<a class="dropdown-item" href="#">我不是药神</a>
+											<a class="dropdown-item active" href="#">魔童哪吒</a>
+											<a class="dropdown-item" href="#">流浪地球</a>
+										</div>
+									</div>
+									<div class="col-12 col-md-6 col-lg-12 col-xl-6 col-xxl-4">
+										<p class="mb-0">禁用样式:</p>
+										<div class="dropdown-menu mb-2" style="position:static;display:block;">
+											<a class="dropdown-item" href="#">我不是药神</a>
+											<a class="dropdown-item disabled" href="#">魔童哪吒</a>
+											<a class="dropdown-item" href="#">流浪地球</a>
+										</div>
+									</div>
+									<div class="col-12 col-md-6 col-lg-12 col-xl-6 col-xxl-4">
+										<p class="mb-0">带标题:</p>
+										<div class="dropdown-menu mb-2" style="position:static;display:block;">
+											<h6 class="dropdown-header">标题</h6>
+											<a class="dropdown-item" href="#">我不是药神</a>
+											<a class="dropdown-item" href="#">魔童哪吒</a>
+											<a class="dropdown-item" href="#">流浪地球</a>
+										</div>
+									</div>
+									<div class="col-12 col-md-6 col-lg-12 col-xl-6 col-xxl-4">
+										<p class="mb-0">带分割线:</p>
+										<div class="dropdown-menu mb-2" style="position:static;display:block;">
+											<a class="dropdown-item" href="#">我不是药神</a>
+											<a class="dropdown-item" href="#">魔童哪吒</a>
+											<a class="dropdown-item" href="#">流浪地球</a>
+											<div class="dropdown-divider"></div>
+											<a class="dropdown-item" href="#">阿甘正传</a>
+										</div>
+									</div>
+									<div class="col-12 col-md-6 col-lg-12 col-xl-6 col-xxl-4">
+										<p class="mb-0">下拉内容:</p>
+										<div class="dropdown-menu p-4 text-muted" style="max-width: 200px;position:static;display:block;">
+											<p class="mb-0">
+												我命由我不由天，是魔是仙，我是谁只有我自己说了算
+											</p>
+										</div>
+									</div>
+								</div>
+								<!-- /.row -->
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h5 class="card-title">进度条 - Progress Bars</h5>
+								<h6 class="card-subtitle text-muted">Examples for using Bootstrap custom progress bars.</h6>
+							</div>
+							<div class="card-body">
+								<div class="progress mb-3">
+									<div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">默认样式</div>
+								</div>
+
+								<div class="progress mb-3">
+									<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">条纹 - Striped</div>
+								</div>
+
+								<div class="progress mb-3">
+									<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">动画 - Animated</div>
+								</div>
+
+								<div class="progress">
+									<div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">叠加 - Stacked</div>
+									<div class="progress-bar bg-warning" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
+									<div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+									<div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header">
+								<h5 class="card-title">旋转加载 -Spinners</h5>
+								<h6 class="card-subtitle text-muted">表示组件正在加载.</h6>
+							</div>
+							<div class="card-body">
+
+								<div class="mb-2">
+									<div class="spinner-border text-dark mr-2" role="status">
+									</div>
+									<div class="spinner-border text-primary mr-2" role="status">
+									</div>
+									<div class="spinner-border text-secondary mr-2" role="status">
+									</div>
+									<div class="spinner-border text-success mr-2" role="status">
+									</div>
+									<div class="spinner-border text-danger mr-2" role="status">
+									</div>
+									<div class="spinner-border text-warning mr-2" role="status">
+									</div>
+									<div class="spinner-border text-info mr-2" role="status">
+									</div>
+								</div>
+
+								<div class="mb-2">
+									<div class="spinner-border spinner-border-sm text-dark mr-2" role="status">
+									</div>
+									<div class="spinner-border spinner-border-sm text-primary mr-2" role="status">
+									</div>
+									<div class="spinner-border spinner-border-sm text-secondary mr-2" role="status">
+									</div>
+									<div class="spinner-border spinner-border-sm text-success mr-2" role="status">
+									</div>
+									<div class="spinner-border spinner-border-sm text-danger mr-2" role="status">
+									</div>
+									<div class="spinner-border spinner-border-sm text-warning mr-2" role="status">
+									</div>
+									<div class="spinner-border spinner-border-sm text-info mr-2" role="status">
+									</div>
+								</div>
+
+								<hr />
+
+								<div class="mb-2">
+									<div class="spinner-grow text-dark mr-2" role="status">
+									</div>
+									<div class="spinner-grow text-primary mr-2" role="status">
+									</div>
+									<div class="spinner-grow text-secondary mr-2" role="status">
+									</div>
+									<div class="spinner-grow text-success mr-2" role="status">
+									</div>
+									<div class="spinner-grow text-danger mr-2" role="status">
+									</div>
+									<div class="spinner-grow text-warning mr-2" role="status">
+									</div>
+									<div class="spinner-grow text-info mr-2" role="status">
+									</div>
+								</div>
+
+								<div class="mb-2">
+									<div class="spinner-grow spinner-grow-sm text-dark mr-2" role="status">
+									</div>
+									<div class="spinner-grow spinner-grow-sm text-primary mr-2" role="status">
+									</div>
+									<div class="spinner-grow spinner-grow-sm text-secondary mr-2" role="status">
+									</div>
+									<div class="spinner-grow spinner-grow-sm text-success mr-2" role="status">
+									</div>
+									<div class="spinner-grow spinner-grow-sm text-danger mr-2" role="status">
+									</div>
+									<div class="spinner-grow spinner-grow-sm text-warning mr-2" role="status">
+									</div>
+									<div class="spinner-grow spinner-grow-sm text-info mr-2" role="status">
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</main><!-- End cContent -->
+
+		<footer class="footer">
+			<div class="container-fluid">
+				<div class="row text-muted">
+					<div class="col-6 text-left">
+						<ul class="list-inline">
+							<li class="list-inline-item">
+								<a class="text-muted" href="#">支持</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="text-muted" href="#">帮助</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="text-muted" href="#">隐私</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-6 text-right">
+						<p class="mb-0">
+							&copy; 2019 - <a href="http://www.dunwoo.com" target="_blank" class="text-muted">Dunwoo</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div><!-- End Main -->
+</div><!-- End Wrapper -->
+
+<div class="back-to-top"><i class="fe fe-arrow-up"></i></div>
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="libs/jquery/jquery.js"></script>
+<!-- bootstrap.bundle.js 包含了 popper 内容. -->
+<script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/theme.js"></script>
+
+<script>
+	$(function () { 
+		$("[data-toggle='popover']").popover();
+		$("[data-toggle='tooltip']").tooltip();
+	});
+</script>
+
+</body>
+
+</html>

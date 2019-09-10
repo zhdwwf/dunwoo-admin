@@ -1,0 +1,100 @@
+//
+// Utilities
+//
+
+
+
+.text-sm {
+	font-size: .75rem;
+}
+
+
+.font-size-1 {
+    font-size: 1rem; //16px
+}
+
+
+
+
+.card>.dataTables_wrapper .table.dataTable,
+.card>.table,
+.card>.table-responsive-lg .table,
+.card>.table-responsive-md .table,
+.card>.table-responsive-sm .table,
+.card>.table-responsive-xl .table,
+.card>.table-responsive .table {
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    margin-bottom: 0
+}
+
+
+
+.card>.dataTables_wrapper .table.dataTable td:last-child,
+.card>.dataTables_wrapper .table.dataTable th:last-child,
+.card>.table-responsive-lg .table td:last-child,
+.card>.table-responsive-lg .table th:last-child,
+.card>.table-responsive-md .table td:last-child,
+.card>.table-responsive-md .table th:last-child,
+.card>.table-responsive-sm .table td:last-child,
+.card>.table-responsive-sm .table th:last-child,
+.card>.table-responsive-xl .table td:last-child,
+.card>.table-responsive-xl .table th:last-child,
+.card>.table-responsive .table td:last-child,
+.card>.table-responsive .table th:last-child,
+.card>.table td:last-child,
+.card>.table th:last-child {
+    border-right: 0;
+    padding-right: 1.25rem
+}
+
+.card>.dataTables_wrapper .table.dataTable tr:first-child td,
+.card>.dataTables_wrapper .table.dataTable tr:first-child th,
+.card>.table-responsive-lg .table tr:first-child td,
+.card>.table-responsive-lg .table tr:first-child th,
+.card>.table-responsive-md .table tr:first-child td,
+.card>.table-responsive-md .table tr:first-child th,
+.card>.table-responsive-sm .table tr:first-child td,
+.card>.table-responsive-sm .table tr:first-child th,
+.card>.table-responsive-xl .table tr:first-child td,
+.card>.table-responsive-xl .table tr:first-child th,
+.card>.table-responsive .table tr:first-child td,
+.card>.table-responsive .table tr:first-child th,
+.card>.table tr:first-child td,
+.card>.table tr:first-child th {
+    border-top: 0
+}
+
+.card>.dataTables_wrapper .table.dataTable tr:last-child td,
+.card>.table-responsive-lg .table tr:last-child td,
+.card>.table-responsive-md .table tr:last-child td,
+.card>.table-responsive-sm .table tr:last-child td,
+.card>.table-responsive-xl .table tr:last-child td,
+.card>.table-responsive .table tr:last-child td,
+.card>.table tr:last-child td {
+    border-bottom: 0
+}
+
+.card .card-header+.table {
+    border-top: 0
+}
+
+
+
+.card>.dataTables_wrapper .table.dataTable {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important
+}
+
+.card>.dataTables_wrapper .dataTables_info {
+    padding: 1rem 1.25rem
+}
+
+.card>.dataTables_wrapper .dataTables_paginate {
+    padding: .6rem 1.25rem
+}
+
+
+
+

@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Bootstrap 4 后台管理模板.">
+  <meta name="keywords" content="Bootstrap, Bootstrap4, Bootstrap 4, HTML, HTML5, CSS, CSS3, JS, JavaScript, web, 后台管理, 前端, 开源">
+
+  <!-- Vendor CSS -->
+  <link rel="stylesheet" href="fonts/feather/feather.min.css">
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="css/theme.css">
+
+	<title>Validation - Dunwoo Admin - Bootstrap Template</title>
+</head>
+
+<body>
+<div class="wrapper">
+	<nav id="menubar" class="menubar">
+		<a class="menubar-brand" href="index.html">Dunwoo Admin</a>
+
+		<ul class="menubar-nav">
+			<li class="menubar-header">
+				主菜单
+			</li>
+			<li class="menubar-item">
+				<a href="index.html" class="menubar-link collapsed">
+	        <i class="fe fe-home"></i> <span>首页</span>
+	      </a>
+			</li>
+			<li class="menubar-item">
+				<a href="#pages" data-toggle="collapse" class="menubar-link collapsed">
+	        <i class="fe fe-file"></i> <span>页面示例</span>
+	      </a>
+				<ul id="pages" class="menubar-dropdown list-unstyled collapse" data-parent="#menubar">
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="pages-sign-in.html">登录 <span class="small ml-1">Sign In</span></a></li>
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="pages-sign-up.html">注册 <span class="small ml-1">Sign Up</span></a></li>
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="pages-reset-password.html">密码重置 <span class="small ml-1">Reset Password</span></a></li>
+					<li class="menubar-item"><a class="menubar-link" href="pages-404.html">404 页面</a></li>
+					<li class="menubar-item"><a class="menubar-link" href="pages-500.html">500 页面</a></li>
+				</ul>
+			</li>
+			<li class="menubar-item">
+				<a href="#documentation" data-toggle="collapse" class="menubar-link collapsed">
+	        <i class="fe fe-book-open"></i> <span>文档</span>
+	      </a>
+				<ul id="documentation" class="menubar-dropdown list-unstyled collapse " data-parent="#menubar">
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="docs-getting-started.html">开始使用<span class="small ml-1">Getting Started</span></a></li>
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="docs-changelog.html">更新日志<span class="small ml-1">Changelog</span></a></li>
+				</ul>
+			</li>
+
+			<li class="menubar-header">
+				常用组件
+			</li>
+			<li class="menubar-item">
+				<a href="#ui" data-toggle="collapse" class="menubar-link collapsed">
+	        <i class="fe fe-grid"></i> <span>UI 元素</span>
+	      </a>
+				<ul id="ui" class="menubar-dropdown list-unstyled collapse " data-parent="#menubar">
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="ui-alerts.html">警告框<span class="small ml-1">Alerts</span></a></li>
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="ui-buttons.html">按钮<span class="small ml-1">Buttons</span></a></li>
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="ui-cards.html">卡片<span class="small ml-1">Cards</span></a></li>
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="ui-grid.html">网格<span class="small ml-1">Grid</span></a></li>
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="ui-modals.html">模态窗口<span class="small ml-1">Modals</span></a></li>
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="ui-tabs.html">选项卡<span class="small ml-1">Tabs</span></a></li>
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="ui-typography.html">文字排版<span class="small ml-1">Typography</span></a></li>
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="ui-general.html">其他组件<span class="small ml-1">General</span></a></li>
+				</ul>
+			</li>
+			<li class="menubar-item">
+				<a href="#charts" data-toggle="collapse" class="menubar-link collapsed">
+	        <i class="fe fe-pie-chart"></i> 图表<span class="small ml-1">Charts</span>
+	      </a>
+				<ul id="charts" class="menubar-dropdown list-unstyled collapse " data-parent="#menubar">
+					<li class="menubar-item"><a class="menubar-link" href="#">Chart.js <span class="menubar-badge badge badge-primary">Feature</span></a></li>
+				</ul>
+			</li>
+			<li class="menubar-item active">
+				<a href="#forms" data-toggle="collapse" class="menubar-link">
+	        <i class="fe fe-check-square"></i> 表单<span class="small ml-1">Forms</span>
+	      </a>
+				<ul id="forms" class="menubar-dropdown list-unstyled collapse show" data-parent="#menubar">
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="forms-layouts.html">布局<span class="small ml-1">Layouts</span></a></li>
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="forms-basic-elements.html">基本元素<span class="small ml-1">Basic</span></a></li>
+					<li class="menubar-item"><a class="menubar-link align-items-end" href="forms-input-groups.html">输入组<span class="small ml-1">Input Groups</span></a></li>
+					<li class="menubar-item active"><a class="menubar-link align-items-end" href="forms-validation.html">验证<span class="small ml-1">Validation</span></a></li>
+				</ul>
+			</li>
+			<li class="menubar-item">
+				<a href="#tables" data-toggle="collapse" class="menubar-link collapsed">
+	        <i class="fe fe-list"></i> 表格<span class="small ml-1">Tables</span>
+	      </a>
+				<ul id="tables" class="menubar-dropdown list-unstyled collapse " data-parent="#menubar">
+					<li class="menubar-item"><a class="menubar-link" href="tables-bootstrap.html">Bootstrap</a></li>
+					<li class="menubar-item"><a class="menubar-link" href="#">DataTables <span class="menubar-badge badge badge-primary">Feature</span></a></li>
+				</ul>
+			</li>
+			<li class="menubar-item">
+				<a href="#icons" data-toggle="collapse" class="menubar-link collapsed">
+	        <i class="fe fe-heart"></i> 图标<span class="small ml-1">Icons</span>
+	      </a>
+				<ul id="icons" class="menubar-dropdown list-unstyled collapse " data-parent="#menubar">
+					<li class="menubar-item"><a class="menubar-link" href="icons-feather.html">Feather</a></li>
+					<li class="menubar-item"><a class="menubar-link" href="icons-font-awesome.html">Font Awesome</a></li>
+				</ul>
+			</li>
+			<li class="menubar-item">
+				<a href="#multi" data-toggle="collapse" class="menubar-link">
+	        <i class="fe fe-share-2"></i> <span>多级菜单</span>
+	      </a>
+				<ul id="multi" class="menubar-dropdown list-unstyled collapse" data-parent="#menubar">
+					<li class="menubar-item">
+						<a href="#multi-2" data-toggle="collapse" class="menubar-link collapsed">
+	            二级菜单
+	          </a>
+						<ul id="multi-2" class="menubar-dropdown list-unstyled collapse">
+							<li class="menubar-item">
+								<a class="menubar-link" href="#">Item 1</a>
+								<a class="menubar-link" href="#">Item 2</a>
+							</li>
+						</ul>
+					</li>
+					<li class="menubar-item">
+						<a href="#multi-3" data-toggle="collapse" class="menubar-link collapsed">
+	            三级菜单
+	          </a>
+						<ul id="multi-3" class="menubar-dropdown list-unstyled collapse">
+							<li class="menubar-item">
+								<a href="#multi-3-1" data-toggle="collapse" class="menubar-link collapsed">
+	                Item 1
+	              </a>
+								<ul id="multi-3-1" class="menubar-dropdown list-unstyled collapse">
+									<li class="menubar-item">
+										<a class="menubar-link" href="#">Item 1</a>
+										<a class="menubar-link" href="#">Item 2</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menubar-item">
+								<a class="menubar-link" href="#">Item 2</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</nav><!-- End Menubar -->
+
+	<div class="main">
+		<nav class="navbar navbar-expand navbar-light bg-white">
+			<a class="menubar-toggle d-flex mr-2">
+				<i class="hamburger align-self-center"></i>
+			</a>
+			<div class="navbar-collapse collapse mr-3">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-icon">
+						<a href="https://github.com/dwosc/dunwoo-admin" target="_blank">
+							<svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false">
+		            <title>GitHub</title>
+		            <path d="M256 0C114.64 0 0 114.61 0 256c0 113.09 73.34 209 175.08 242.9 12.8 2.35 17.47-5.56 17.47-12.34 0-6.08-.22-22.18-.35-43.54-71.2 15.49-86.2-34.34-86.2-34.34-11.64-29.57-28.42-37.45-28.42-37.45-23.27-15.84 1.73-15.55 1.73-15.55 25.69 1.81 39.21 26.38 39.21 26.38 22.84 39.12 59.92 27.82 74.5 21.27 2.33-16.54 8.94-27.82 16.25-34.22-56.84-6.43-116.6-28.43-116.6-126.49 0-27.95 10-50.8 26.35-68.69-2.63-6.48-11.42-32.5 2.51-67.75 0 0 21.49-6.88 70.4 26.24a242.65 242.65 0 0 1 128.18 0c48.87-33.13 70.33-26.24 70.33-26.24 14 35.25 5.18 61.27 2.55 67.75 16.41 17.9 26.31 40.75 26.31 68.69 0 98.35-59.85 120-116.88 126.32 9.19 7.9 17.38 23.53 17.38 47.41 0 34.22-.31 61.83-.31 70.23 0 6.85 4.61 14.81 17.6 12.31C438.72 464.97 512 369.08 512 256.02 512 114.62 397.37 0 256 0z" fill="currentColor" fill-rule="evenodd"></path>
+		          </svg>
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-icon dropdown-toggle" href="#" id="messagesDropdown" data-toggle="dropdown">
+							<div class="position-relative">
+								<i class="fe fe-message-circle"></i>
+								<span class="indicator">3</span>
+							</div>
+						</a>
+						<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="messagesDropdown">
+							<div class="dropdown-menu-header">
+								<div class="position-relative">
+									新消息
+								</div>
+							</div>
+							<div class="list-group">
+								<a href="#" class="list-group-item">
+									<div class="row no-gutters align-items-center">
+										<div class="col-10 pl-2">
+											<div class="text-dark">小张 <span class="text-muted small ml-1">2h ago</span></div>
+											<div class="text-muted small mt-1">主题不错.</div>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="list-group-item">
+									<div class="row no-gutters align-items-center">
+										<div class="col-10 pl-2">
+											<div class="text-dark">小李 <span class="text-muted small ml-1">4h ago</span></div>
+											<div class="text-muted small mt-1">Bootstrap 4 flex 弹性布局.</div>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="list-group-item">
+									<div class="row no-gutters align-items-center">
+										<div class="col-10 pl-2">
+											<div class="text-dark">小王 <span class="text-muted small ml-1">5h ago</span></div>
+											<div class="text-muted small mt-1">999，6 翻了.</div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="dropdown-menu-footer">
+								<a href="#" class="text-muted">查看所有</a>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-toggle="dropdown">
+							<div class="position-relative">
+								<i class="fe fe-bell"></i>
+							</div>
+						</a>
+						<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="alertsDropdown">
+							<div class="dropdown-menu-header">
+								系统通知
+							</div>
+							<div class="list-group">
+								<a href="#" class="list-group-item">
+									<div class="row no-gutters align-items-center">
+										<div class="col-10">
+											<div class="text-dark">系统更新 <span class="text-muted small ml-1">2h ago</span></div>
+											<div class="text-muted small mt-1">新版本 v888888.</div>
+										</div>
+									</div>
+								</a>
+								<a href="#" class="list-group-item">
+									<div class="row no-gutters align-items-center">
+										<div class="col-10">
+											<div class="text-dark">登录 IP: 192.186.1.1 <span class="text-muted small ml-1">8h ago</span></div>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="dropdown-menu-footer">
+								<a href="#" class="text-muted">查看所有</a>
+							</div>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-toggle="dropdown">
+	            <i class="align-middle fe fe-settings"></i>
+	          </a>
+
+						<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-toggle="dropdown">
+	            <img src="img/avatar.png" class="avatar img-fluid rounded-circle mr-1" alt="Dunwoo" /> <span class="text-dark">Dunwoo</span>
+	          </a>
+						<div class="dropdown-menu dropdown-menu-right">
+							<a class="dropdown-item" href="#">个人信息</a>
+							<a class="dropdown-item" href="#">设置</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="docs-getting-started.html">帮助</a>
+							<a class="dropdown-item" href="index.html">退出</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav><!-- End Navbar -->
+
+		<main class="content">
+			<div class="container-fluid p-0">
+
+				<h1 class="h3 mb-3">表单验证 - Validation</h1>
+
+				<div class="row">
+					<div class="col-12">
+
+						<div class="card">
+              <div class="card-body">
+                
+                <form>
+                  <div class="form-row">
+                    <div class="col-12 col-md-6 mb-3">
+                      <label for="validationServer01">用户名</label>
+                      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" value="Mark" required="">
+                      <div class="valid-feedback">
+                        验证通过
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                      <label for="validationServer02">密码</label>
+                      <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" value="Otto" required="">
+                      <div class="valid-feedback">
+                        验证通过
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-12 col-md-6 mb-3">
+                      <label for="validationServer03">邮箱</label>
+                      <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="City" required="">
+                      <div class="invalid-feedback">
+                        邮箱格式不正确
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 mb-3">
+                      <label for="validationServer04">手机号</label>
+                      <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="State" required="">
+                      <div class="invalid-feedback">
+                        手机号格式不正确
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required="">
+                      <label class="form-check-label" for="invalidCheck3">
+                        同意协议
+                      </label>
+                      <div class="invalid-feedback">
+                        提交之前您必须同意此协议
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-primary" type="submit">注 册</button>
+                </form>
+
+              </div>
+            </div>
+
+					</div>
+				</div>
+
+			</div>
+		</main>
+		
+		<footer class="footer">
+			<div class="container-fluid">
+				<div class="row text-muted">
+					<div class="col-6 text-left">
+						<ul class="list-inline">
+							<li class="list-inline-item">
+								<a class="text-muted" href="#">支持</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="text-muted" href="#">帮助</a>
+							</li>
+							<li class="list-inline-item">
+								<a class="text-muted" href="#">隐私</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-6 text-right">
+						<p class="mb-0">
+							&copy; 2019 - <a href="http://www.dunwoo.com" target="_blank" class="text-muted">Dunwoo</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div><!-- End Main -->
+
+</div><!-- End Wrapper -->
+
+<div class="back-to-top"><i class="fe fe-arrow-up"></i></div>
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="libs/jquery/jquery.js"></script>
+<!-- bootstrap.bundle.js 包含了 popper 内容. -->
+<script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/theme.js"></script>
+
+
+</body>
+
+</html>

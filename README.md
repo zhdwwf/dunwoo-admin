@@ -2,6 +2,8 @@
 
 **Dunwoo Admin** 是一个为 Bootstrap 4 设计的响应式后台管理模板，提供了常用的 UI 组件，小部件和示例页面，可以帮助您轻松构建 Web 应用。它使用 Webpack 4，通过修改 package.json, theme.js, theme.scss 可以轻松扩展和管理前端资源。
 
+演示地址：https://dunwoo.com/projects/dunwoo-admin
+
 ![Dunwoo Admin Default](https://github.com/dwosc/dunwoo-admin/blob/master/dist/img/screenshots/admin-default.png)
 
 ## 特点
